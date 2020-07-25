@@ -25,8 +25,8 @@ class Main extends Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
   handleKeyPress = (event) => {
-    event.preventDefault();
     if (event.shiftKey || event.key === "Enter") {
+      event.preventDefault();
       console.log("yes");
       this.handelSearch();
     }
